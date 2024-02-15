@@ -1,0 +1,29 @@
+.tv-input{
+    &__name{
+        color: $color-black;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: $spacer-1;
+    }
+
+    &__input{
+        width: 100%;
+        border: 1px solid $color-light-grey;
+        padding: $spacer-2;
+    }
+
+    &__container{
+        padding: $spacer-2 $spacer-0;
+    }
+
+    &__message{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        width: 100%;
+        min-height: 180px;
+        border: 1px solid $color-light-grey;
+    }
+
+}

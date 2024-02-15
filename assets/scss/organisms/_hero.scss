@@ -1,0 +1,109 @@
+.tv-hero{
+    width: 100%;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &__outer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $spacer-5 $spacer-0;
+    }
+
+    &__head{
+        font-size: 40px;
+        line-height: 46px;
+        padding-bottom: $spacer-3;
+        color: $color-white;
+        font-weight: 700;
+    }
+
+    &__content{
+        font-size: 18px;
+        line-height: 24px;
+        color: $color-white;
+        padding-bottom: $spacer-3;
+    }
+
+    &__outer-btn{
+        width: 140px;
+        height: auto;
+    }
+
+    &__cnt{
+        width: 50%;
+        padding: $spacer-3;
+    }
+
+
+}
+
+
+
+.tv-move{
+    width: 50%;
+
+    &__img{
+        width: 100%;
+        height: auto;
+        
+        img{
+            width: auto;
+            height: 400px;
+        }
+       
+    }
+
+    .slick-slide{
+        display: flex;
+        justify-content: center;
+    }
+    .slick-prev:before, .slick-prev , .slick-next:before, .slick-next{
+        display: none !important;
+    }
+
+    .slick-dots li button:before{
+        background-color: $color-white;
+        border-radius: 50%;
+    }
+
+
+}
+
+@include mobile{
+    .tv-hero{
+        min-height: 1000px;
+        &__outer{
+            flex-direction: column-reverse;
+        }
+
+        &__cnt{
+            width: 100%;
+            padding: $spacer-0;
+            padding-top: $spacer-3;
+        }
+        &__head{
+            font-size: 30px;
+            line-height: 36px;
+            
+        }
+    }
+    .tv-move{
+        width: 100%;
+        max-height: 400px;
+    }
+    .tv-move__img {
+        width: 100%;
+        max-height: 400px;
+    }
+    img{
+        width: auto;      
+        max-height: 400px;
+    }
+
+}
+
+
